@@ -1,0 +1,1143 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,600;0,900;1,600&family=Rowdies:wght@700&display=swap');
+
+/*NAV BAR*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+#site-logo{
+  height: 15vh;
+  width: 5vw;
+  display: block;
+  position: relative;
+  left: 5vw;
+  border: white 2px solid;
+}
+#nav{
+  text-align: center;
+  margin-left: 10vw;
+  position: relative;
+  margin-top: -9vh;
+}
+#myHeader{
+  background-color: #000000;
+  height: 15vh;
+}
+.white{
+  color: white;
+}
+.white:hover{
+  color: #ff5047;
+}
+.desktop-nav{
+  color: white;
+  display: inline-block;
+  position: relative;
+  margin-right: 5vw;
+  font-size: x-large;
+  font-weight: 700;
+  font-family: rowdies;
+}
+
+.desktop-nav:hover{
+  color: #ff5047;
+  text-decoration:underline;
+  text-decoration-thickness: 1vh;
+}
+a{
+    text-decoration: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+#burger{
+  float: right;
+  height: 20px;
+  width: 20px;
+  padding-right: 3vw;
+  padding-top: 1vh ;
+  display: none;
+
+}
+#burgerimg{
+  object-fit: cover;
+  height: 30px;
+  width: 30px;
+}
+
+               /*HOME PAGE    <div class="burger">
+      <div class="line1"></div>
+      <div class="line4"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>*/
+#home{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#hometext{
+    font-weight: 800;
+    font-size: 5vh;
+    text-align: center;
+    font-family: rowdies;
+    padding-top: 50vh;
+    padding-left: 40vh;
+    position: absolute;
+    z-index: 10;
+  }
+ 
+#hometexth1{
+    text-decoration: underline;
+   color: white;
+}
+
+#hometexth3{
+  color: white;
+}
+
+#img1{
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    
+}
+#headerimage{
+  animation: color1 9s infinite linear;
+  background-color: #ff5047;
+}
+@keyframes color1 {
+ 
+
+  0{background-color: #ff7f7f;}
+  10%{background-color: #ff6666;}
+  20%{background-color: #ff4c4c;}
+   30%{background-color: #ff3232 ;}
+   40%{background-color: #ff1919;}
+   50%{background-color: #ff0000;}
+   60%{background-color:   #ff1919;}
+   70%{background-color:  #ff3232 ;}
+   80%{background-color:  #ff4c4c ;}
+   90%{background-color:  #ff6666;}
+   100%{background-color:   #ff7f7f ;}
+
+}
+          /*SKILLS*/
+  #SKILLS{
+      width: 100%;
+      height: 80vh;
+      background-image: url("BACKGROUND-1.jpg");
+      background-size: contain;
+  }
+  #skillstext{
+      padding: 5vh;
+      font-size: 5vh;
+  }
+  #skillsheading{
+    background-color: transparent;
+      text-align: center;
+      color: black;
+      font-family: rowdies;
+      font-weight: 700;
+      border: 0px solid;
+  }
+
+                     /*HOME*/
+  #div1{
+      margin-bottom: 5vh;
+  }
+  #progressbar{
+      display: grid;
+      justify-content: center;
+      width: 100%;
+  }
+  .progress {
+    position: relative;
+    width: 80vw;
+    height: 5vh;
+    background: black;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 3vh;
+  }
+  
+  .progress__fill1 {
+    width: 95%;
+    height: 100%;
+    background: #ff5047;
+    animation: prog1 4s ease-in-out infinite;
+  }
+  @keyframes prog1 {
+    0%{
+         width: 0%;
+    }
+    100%{
+        width: 95%;
+    }  
+}
+.progress__fill2 {
+  width: 80%;
+  height: 100%;
+  background: #ff5047;
+  animation: prog2 4s ease-in-out infinite;
+}
+@keyframes prog2 {
+  0%{
+       width: 0%;
+  }
+  100%{
+      width: 80%;
+  }  
+} .progress__fill3 {
+  width: 70%;
+  height: 100%;
+  background: #ff5047;
+  animation: prog3 4s ease-in-out infinite;
+}
+@keyframes prog3 {
+  0%{
+       width: 0%;
+  }
+  100%{
+      width: 70%;
+  }  
+} 
+.progress__fill4 {
+  width: 90%;
+  height: 100%;
+  background: #ff5047;
+  animation: prog4 4s ease-in-out infinite;
+}
+@keyframes prog4 {
+  0%{
+       width: 0%;
+  }
+  100%{
+      width: 90%;
+  }  
+}
+  .progress__text {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font: bold 14px sans-serif;
+    color: white;
+  }
+  .progress_heading{
+      font-family: rowdies;
+      font-weight: 700;
+      font-size: 3vh;
+  }
+             /*SCROLLS */
+
+             .fixedimgsheading{
+              background-color: black;
+              height: 17vh;
+             }
+             #fixed-bg {
+              background-image: url("BACKGROUND-3.jpg");
+              min-height: 40vh;
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }    
+
+                 #fixed-bg2 {
+                  background-image: url("BACKGROUND-4.jpg");
+                  min-height: 40vh;
+                  background-attachment: fixed;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                }    
+
+             /*CLIENTS*/
+   #clientsheading{
+    background-color: black;
+      text-align: center;
+      color: white;
+      font-family: rowdies;
+      font-weight: 700;
+      position: relative;
+  }
+  #clientstext{
+    padding: 5vh;
+    font-size: 5vh;
+}
+.client{
+  display: grid;
+  justify-content: center;
+  height: 30vh;
+  background-color: black;
+}
+.client1 {
+  object-fit: contain;
+  height: 22vh;
+  width: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.client1:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  transform: scale(1.3);
+  transition: transform .5s
+  
+}
+              /*PROJECTS*/
+  #PROJECTS{
+    height: 65vh;
+    width: 100%;
+    background-color: black;
+  }
+  #projectsheading{
+    background-color: transparent;
+     text-align: center;
+      color: white;
+      font-family: rowdies;
+      font-weight: 700;
+      position: relative;
+  }
+  #projectstext{
+    padding: 5vh;
+    font-size: 5vh;
+}
+
+                   
+
+
+#projectlist{
+ display: grid;
+ grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: large;
+}
+
+
+.hoverimg{
+  height: 33vh;
+  width: 28vw;
+}
+a {
+  background:black;
+  
+}
+.hoverimg:hover {
+  opacity: 0.5;
+  border: gray solid 3px;
+  background-color: #000000;
+  transform: scale(1.2);
+  transition: transform .5s
+
+}
+.squidward{
+  object-fit: contain;
+  background-color: #000000;
+}
+
+.centeredtxt{
+  font-family: rowdies;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.tryhover:hover + #centered1{
+  display: block;
+}
+.tryhover:hover + #centered2{
+  display: block;
+}
+.tryhover:hover + #centered3{
+  display: block;
+}
+#centered1{
+    position:absolute;
+    top: 40%;
+    padding-left: 2vw;
+    display: none;
+}
+#centered2{
+  position:absolute;
+  top: 40%;
+  padding-left: 8vw;
+  display: none;
+}
+#centered3{
+  position:absolute;
+  top: 40%;
+  padding-left: 1vw;
+  display: none;
+}
+
+       /*contact form*/
+
+
+
+
+       #contactsheading{
+        background-color: black;
+          text-align: center;
+          color: #ff5047;
+          font-family: rowdies;
+          font-weight: 700;
+          position: relative;
+      }
+      #contactstext{
+        padding: 5vh;
+        font-size: 5vh;
+    }
+#contact-form{
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: #ff5047;
+  font-family: rowdies;
+  font-weight: 400;
+  font-size: x-large;
+  text-align: center;
+}
+#contactname{
+  background-color: transparent;
+  border: 0px solid;
+  color: white;
+  width: 20vw;
+  font-family: rowdies;
+  font-weight: 400;
+  font-size: large;
+  text-align: center;
+  outline: none;
+  margin-bottom: 5vh;
+}
+#contactemail{
+  background-color: transparent;
+  border: 0px solid;
+  color: white;
+  width: 20vw;
+  font-family: rowdies;
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+  outline: none;
+  margin-bottom: 5vh;
+}
+#submitbutton{
+  padding: 15px;
+  font-family: rowdies;
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: gray solid 3px;
+  border-radius: 20%;
+}
+#submitbutton:hover{
+  color: white;
+  background-color: #ff5047;
+}
+
+
+
+
+              /*back*/
+              .box-area {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+              }
+              .box-area li {
+                position: relative;
+                display: block;
+                list-style: none;
+                width: 25px;
+                height: 25px;
+                background: #ff5047;
+                animation: animate 20s linear infinite;
+                bottom: -150px;
+              }
+              .box-area li:nth-child(1) {
+                left: 56%;
+                width: 80px;
+                height: 80px;
+                animation-delay: 0s;
+              }
+              .box-area li:nth-child(2) {
+                left: 12%;
+                width: 30px;
+                height: 30px;
+                animation-delay: 1.5s;
+                animation-duration: 10s;
+              }
+              .box-area li:nth-child(3) {
+                left: 70%;
+                width: 100px;
+                height: 100px;
+                animation-delay: 5.5s;
+              }
+              .box-area li:nth-child(4) {
+                left: 42%;
+                width: 150px;
+                height: 150px;
+                animation-delay: 0s;
+                animation-duration: 15s;
+              }
+              .box-area li:nth-child(5) {
+                left: 65%;
+                width: 40px;
+                height: 40px;
+                animation-delay: 0s;
+              }
+              .box-area li:nth-child(6) {
+                left: 15%;
+                width: 110px;
+                height: 110px;
+                animation-delay: 3.5s;
+              }
+              @keyframes animate {
+                0% {
+                  transform: translateY(0) rotate(0deg);
+                  opacity: 1;
+                }
+                100% {
+                  transform: translateY(-800px) rotate(360deg);
+                  opacity: 0;
+                }
+              }
+
+                /*fixed img*/
+
+
+              
+                .title {
+                  font-size: 5.5vh;
+                 
+                  color: white;
+                  display: inline-block;
+                  text-align: center;
+                  padding-top: 15vh;
+                  line
+                }
+              
+                .title .ltr {
+                 
+                  animation: fade-in 500ms ease-in var(--delay);
+                }
+                
+                @keyframes fade-in {
+                  to {
+                background-color: black;
+              
+                  }
+                }
+                .title .ltr.show {
+                  font-weight: 900;
+                  color:#ff5047 ;
+                  
+                }
+                #fixed-bg2{
+                  display: grid;
+                  grid-template-columns: auto auto;
+                }
+                #bg2-txt{
+                  font-size: x-large;
+                  color: white;
+                  font-family: rowdies;
+                  font-weight: 900;
+                  padding-top: 20vh;
+                  position: relative;
+                  animation: bg-txt 5s  infinite;
+                  text-align: center;
+           
+                                }
+                #bg2-img{
+                  animation: bg-anim 5s  infinite;
+                  position: relative;
+                
+                }
+                @keyframes bg-anim {
+                  from {right: 0;}
+                  70%{right: 47vw;}
+                  to {right: 47vw;}
+                }
+                @keyframes bg-txt {
+                  from {
+                    color: transparent;
+                    left: 0;
+                  }
+                  70% {
+                      color: white;
+                      left: 45vw;
+                    
+                  }
+                  to {
+                    color: white;
+                    left: 45vw;
+                  }
+                }
+
+        /*social media*/
+        #bar{
+          display: grid;
+          grid-template-columns: auto auto auto auto auto;
+          justify-content: center;
+          column-gap: 3vh;
+          height: 12vh;
+          width: 100%;
+          background-color: black;
+          padding-top: 5vh;
+        }
+        
+        .iconimg{
+          object-fit: cover;
+          background-color: white;
+        }
+         .iconimg:hover{
+           background-color: #ff5047;
+         }
+         /*footer*/
+
+         .footertext{
+           text-align: center;
+           font-weight: 900;
+           font-family: rowdies;
+           font-size: larger;
+           color: white;
+           background-color: #000000;
+           height: 8vh;
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         /*RESPONSIVE MOBILE HEADER*/
+
+
+
+
+        /* media query for entire site*/
+
+
+        /*menu and body*//*mobiles*/
+        @media only screen 
+and (min-device-width: 280px) 
+and (max-device-width: 667px) {
+
+
+  /*header and home*/
+
+  #burger{
+    display: block;
+    margin-top: -91vh;
+    cursor: pointer;
+    margin-right: 3vw;
+  }
+
+  #site-logo{
+    height: 15vh;
+    width: 20vw;
+  }
+
+  #nav{
+    right: 0px;
+    display: grid;
+    z-index: 12;
+    position: relative;
+    height: 92vh;
+    top: 8vh;
+    background-color: #000000;
+    transition: transform 0.5s ease-in;
+  }
+
+  #hometext{
+    padding-left: 0;
+    font-size: 3vh;
+    padding-top: 50vh;
+  }
+  #headerimage{
+    margin-top: -22vh;
+    height: 80vh;
+  }
+  #myHeader{
+    height: 9vh;
+  }
+  #site-logo{
+    height: 9vh;
+  }
+  .navlinks{
+    transform:translateX(100%) ;
+  }
+  .newClass{
+    transform: translateX(0%);
+  }
+  .newClass2{
+    transform: translateX(100%);
+  }
+
+/* projects and clients*/
+
+
+.client1{
+  height: 19vh;
+  width: 100%;
+}
+
+#projectlist{
+  display: grid;
+  grid-template-columns: auto;
+}
+.hoverimg{
+  height: 15vh;
+  width: 60vw;
+  margin-bottom: 5vh;
+}
+#PROJECTS{
+  height: 80vh;
+}
+
+#centered1{
+  top: 0%;
+  padding-right: 20vw;
+}
+
+#centered2{
+  position:absolute;
+  top: 40%;
+  padding-left: 1vw;
+}
+
+#centered3{
+  top: 65%;
+  padding-right: 20vw
+}
+
+/*fixed images*/
+
+#bg2-img{
+  height: 70vh;
+  width: 100%;
+}
+#act-img2{
+  height: 30vh;
+  width: 80vw;
+}
+#bg2-txt{
+  margin-top: 10vh;
+  animation: bg-txt 5s  infinite;
+}
+@keyframes bg-txt {
+  from {
+    color: transparent;
+    left: 0;
+  }
+  70% {
+      color: white;
+      left: 25vw;
+    
+  }
+  to {
+    color: white;
+    left: 25vw;
+  }
+}
+
+#fixed-bg {
+  background-image: url("BACKGROUND-3.jpg");
+  min-height: 60vh;
+}
+.title{
+  padding-top: 5vh;
+}
+
+/*footer*/
+
+}
+
+                   /*tablets and short monitors*/
+
+                   @media only screen 
+                   and (min-device-width: 670px)
+                   and (max-device-width: 900px) {
+
+
+                    /*header and home*/
+
+                    #hometext{
+                      padding-left: 5vw;
+                      font-size: 4vh;
+                      padding-top: 70vh;
+                    }
+
+                    .desktop-nav{
+                      color: white;
+                      display: inline-block;
+                      position: relative;
+                      margin-right: 3vw;
+                      font-size: x-large;
+                      font-weight: 700;
+                      font-family: rowdies;
+                    }
+
+                    #site-logo{
+                      height: 15vh;
+                      width: 12vw;
+                      display: block;
+                      position: relative;
+                      left: 1vw;
+                      border: white 2px solid;
+                    }
+                    #bg2-img{
+                      height: 70vh;
+                      width: 100%;
+                    }
+                    #act-img2{
+                     height: 50vh;
+                     width: 55vw;
+                    }
+                    #bg2-txt{
+                      margin-top: 30vh;
+                      animation: bg-txt 5s  infinite;
+                      margin-bottom: 5vh;
+                    }
+                    @keyframes bg-txt {
+                      from {
+                        color: transparent;
+                        left: 0;
+                      }
+                      70% {
+                          color: white;
+                          left: 30vw;
+                        
+                      }
+                      to {
+                        color: white;
+                        left: 30vw;
+                      }
+                    }
+                    #bg2-img{
+                      animation: bg-anim 5s  infinite;
+                      position: relative;
+                    
+                    }
+                    @keyframes bg-anim {
+                      from {right: 0;}
+                      70%{right: 25vw;}
+                      to {right: 25vw;}
+                    }
+
+                    .hoverimg{
+                      height: 18vh;
+                      width: 30vw;
+                    }
+
+                    #PROJECTS{
+                      height: 45vh;
+                      width: 100%;
+                      background-color: black;
+                    }
+
+                    #centered1{
+                      position:absolute;
+                      top: 0%;
+                      padding-right: 80vw;
+                     
+                  }
+                  #centered2{
+                    position:absolute;
+                    top: 40%;
+                    padding-left: 2vw;
+                  
+                  }
+                  #centered3{
+                    position:absolute;
+                    top: 0%;
+                    padding-left: 1vw;
+                   
+                  }
+
+                   }
+
+                   /*mid monitors*/
+
+                   @media only screen 
+                   and (min-device-width: 900px)
+                   and (max-device-width: 1024px) 
+                    {
+                      #hometext{
+                        padding-left: 8vw;
+                      
+                      }
+                      #site-logo{
+                        height: 15vh;
+                        width: 12vw;
+                        display: block;
+                        position: relative;
+                        left: 1vw;
+                        border: white 2px solid;
+                      }
+                      .desktop-nav{
+                        font-size: 3.2vh;
+                      }
+
+                      #centered1{
+                        position:absolute;
+                        top: 40%;
+                        padding-right: 70vw;
+                        display: none;
+                      }
+
+                      #centered2{
+                        position:absolute;
+                        top: 40%;
+                        padding-left: 4vw;
+                        display: none;
+                      }
+
+                      #centered3{
+                        position:absolute;
+                        top: 40%;
+                        padding-right: 8vw;
+                        display: none;
+                      }
+
+                      .hoverimg{
+                        height: 22vh;
+                        width: 30vw;
+                      }
+
+                      #PROJECTS{
+                        height: 50vh;
+                      }
+
+
+
+
+                      #bg2-img{
+                        height: 70vh;
+                        width: 100%;
+                      }
+                      #act-img2{
+                       height: 50vh;
+                       width: 55vw;
+                      }
+                      #bg2-txt{
+                        margin-top: 30vh;
+                        animation: bg-txt 5s  infinite;
+                        margin-bottom: 5vh;
+                      }
+                      @keyframes bg-txt {
+                        from {
+                          color: transparent;
+                          left: 0;
+                        }
+                        70% {
+                            color: white;
+                            left: 30vw;
+                          
+                        }
+                        to {
+                          color: white;
+                          left: 30vw;
+                        }
+                      }
+                      #bg2-img{
+                        animation: bg-anim 5s  infinite;
+                        position: relative;
+                      
+                      }
+                      @keyframes bg-anim {
+                        from {right: 0;}
+                        70%{right: 25vw;}
+                        to {right: 25vw;}
+                      }
+                  }
+
+
+                  @media only screen 
+                  and (min-device-width: 1440px)
+                   {
+
+
+
+                    #hometext{
+                      margin-top: 20vh;
+                      padding-left: 15vw;
+                    
+                    }
+
+                    #site-logo{
+                      height: 15vh;
+                      width: 12vw;
+                      display: block;
+                      position: relative;
+                      left: 3vw;
+                      border: white 2px solid;
+                    }
+                    .desktop-nav{
+                      font-size: 3.2vh;
+                    }
+
+
+                    .hoverimg{
+                      height: 25vh;
+                      width: 30vw;
+                    }
+
+                    #PROJECTS{
+                      height: 60vh;
+                    }
+
+                   }
+
+
+                   @media only screen 
+                   and (min-device-width: 2560px)
+                    {
+
+                      #hometext{
+                        margin-top: 10vh;
+                      
+                      }
+                      #site-logo{
+                        height: 15vh;
+                        width: 10vw;
+                        display: block;
+                        position: relative;
+                        left: 3vw;
+                        border: white 2px solid;
+                      }
+                     
+
+                      .desktop-nav{
+                        font-size: 4vh;
+                      }
+
+                     
+                      #act-img2{
+                        height: 40vh;
+                        width: 40vw;
+                      }
+                      #bg2-txt{
+                        font-size: 2.5vh;
+                        animation: bg-txt 5s  infinite;
+                      }
+                      @keyframes bg-txt {
+                        from {
+                          color: transparent;
+                          left: 0;
+                        }
+                        70% {
+                            color: white;
+                            left: 50vw;
+                          
+                        }
+                        to {
+                          color: white;
+                          left: 50vw;
+                        }
+                      }
+
+                      @keyframes bg-anim {
+                        from {right: 0;}
+                        70%{right: 47vw;}
+                        to {right: 47vw;}
+                      }
+
+
+
+
+                      #contactname{
+                        font-size: 3vh;
+                      }
+
+                      #contact-form{
+                        font-size: 3.3vh;
+                      }
+
+                      
+                      #contactemail{
+                        font-size: 3vh;
+                      }
+                      
+                    #submitbutton{
+                      font-size: 3vh;
+                    }
+
+                    .footertext{
+                      font-size: 3vh;
+                    }
+                    
+
+
+                    .iconimg{
+                      height: 70%;
+
+                      background-color: white;
+                    }
+
+                    }
+
+
+
+
+
+                
