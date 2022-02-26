@@ -7,57 +7,99 @@
 }
 html, body {
   overflow-x: hidden;
+  background-color: white;
+  scroll-behavior: smooth;
 }
 body {
   position: relative
 }
-#site-logo{
-  height: 15vh;
-  width: 5vw;
-  display: block;
-  position: relative;
-  left: 5vw;
-  border: white 2px solid;
+
+.slideheight{
+  width: 100%;
 }
+.float{
+  position: absolute;
+  top: -40vh;
+}
+.floattext{
+color: white;
+font-size: 10vh;
+font-weight: 800px;
+font-family: rowdies;
+}
+.slide{
+    height: 80vh;
+    width: 100vw;
+    margin: auto;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.title {
+  font-size: 6vh;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding-right: 20vw;
+}
+
+.title .ltr {
+ 
+  animation: fade-in 500ms ease-in var(--delay);
+}
+
+@keyframes fade-in {
+  to {
+background-color: black;
+color: white;
+
+  }
+}
+.title .ltr.show {
+  font-weight: 900;
+  color:#ff5047 ;
+  
+}
+
+
+
+
+
+
 #nav{
   text-align: center;
-  margin-left: 10vw;
   position: relative;
-  margin-top: -9vh;
-}
-#myHeader{
-  background-color: #000000;
-  height: 15vh;
+  top: 0vh;
+ 
 }
 .white{
-  color: white;
+  color: black;
 }
 .white:hover{
   color: #ff5047;
 }
 .desktop-nav{
-  color: white;
+  
   display: inline-block;
-  position: relative;
-  margin-right: 5vw;
-  font-size: x-large;
+  margin-right: 3vw;
+  font-size: 3vh;
   font-weight: 700;
   font-family: rowdies;
+  padding: 15px;
+  border-radius: 30px;
 }
 
 .desktop-nav:hover{
   color: #ff5047;
-  text-decoration:underline;
-  text-decoration-thickness: 1vh;
 }
 a{
     text-decoration: none;
+   
 }
 .sticky {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  width: 100%;
-  z-index: 1;
 }
 #burger{
   float: right;
@@ -74,12 +116,11 @@ a{
   width: 30px;
 }
 
-               /*HOME PAGE    <div class="burger">
-      <div class="line1"></div>
-      <div class="line4"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>*/
+    #myHeader{
+      display: block;
+      background-color: white;
+      box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+    } 
 #home{
     display: grid;
     grid-template-columns: auto auto;
@@ -95,47 +136,12 @@ a{
     z-index: 10;
   }
  
-#hometexth1{
-    text-decoration: underline;
-   color: white;
-}
 
-#hometexth3{
-  color: white;
-}
-
-#img1{
-    height: 100vh;
-    width: 100%;
-    object-fit: contain;
-    position: relative;
-    
-}
-#headerimage{
-  animation: color1 9s infinite linear;
-  background-color: #ff5047;
-}
-@keyframes color1 {
- 
-
-  0{background-color: #ff7f7f;}
-  10%{background-color: #ff6666;}
-  20%{background-color: #ff4c4c;}
-   30%{background-color: #ff3232 ;}
-   40%{background-color: #ff1919;}
-   50%{background-color: #ff0000;}
-   60%{background-color:   #ff1919;}
-   70%{background-color:  #ff3232 ;}
-   80%{background-color:  #ff4c4c ;}
-   90%{background-color:  #ff6666;}
-   100%{background-color:   #ff7f7f ;}
-
-}
           /*SKILLS*/
   #SKILLS{
       width: 100%;
       height: 80vh;
-      background-image: url("BACKGROUND-1.jpg");
+   
       background-size: contain;
   }
   #skillstext{
@@ -145,7 +151,7 @@ a{
   #skillsheading{
     background-color: transparent;
       text-align: center;
-      color: black;
+      color: #ff5047;
       font-family: rowdies;
       font-weight: 700;
       border: 0px solid;
@@ -162,37 +168,51 @@ a{
   }
   .progress {
     position: relative;
-    width: 80vw;
-    height: 5vh;
+    width: 30vw;
+    height: 3vh;
     background: black;
-    border-radius: 5px;
+    border-radius: 30px;
     overflow: hidden;
     margin-bottom: 3vh;
+  }
+  .skillcenter{
+    background-color: whitesmoke;
+    height: 60vh;
+    width: 60%;
+    margin-left: 20%;
+    position: relative;
+    border-radius: 5%;
   }
   
   .progress__fill1 {
     width: 95%;
     height: 100%;
     background: #ff5047;
-    animation: prog1 4s ease-in-out infinite;
+    animation: prog1 8s ease-in-out infinite;
   }
   @keyframes prog1 {
     0%{
          width: 0%;
+    }
+    60%{
+      width: 95%;
     }
     100%{
         width: 95%;
     }  
 }
 .progress__fill2 {
-  width: 80%;
+  width: 40%;
   height: 100%;
   background: #ff5047;
-  animation: prog2 4s ease-in-out infinite;
+  animation: prog2 8s ease-in-out infinite;
 }
 @keyframes prog2 {
   0%{
        width: 0%;
+  }
+  60%{
+    width: 80%;
   }
   100%{
       width: 80%;
@@ -201,25 +221,31 @@ a{
   width: 70%;
   height: 100%;
   background: #ff5047;
-  animation: prog3 4s ease-in-out infinite;
+  animation: prog3 8s ease-in-out infinite;
 }
 @keyframes prog3 {
   0%{
        width: 0%;
+  }
+  60%{
+    width: 70%;
   }
   100%{
       width: 70%;
   }  
 } 
 .progress__fill4 {
-  width: 90%;
+  width: 100%;
   height: 100%;
   background: #ff5047;
-  animation: prog4 4s ease-in-out infinite;
+  animation: prog4 8s ease-in-out infinite;
 }
 @keyframes prog4 {
   0%{
        width: 0%;
+  }
+  60%{
+    width: 90%;
   }
   100%{
       width: 90%;
@@ -237,6 +263,8 @@ a{
       font-family: rowdies;
       font-weight: 700;
       font-size: 3vh;
+      color: black;
+
   }
              /*SCROLLS */
 
@@ -246,12 +274,21 @@ a{
              }
              #fixed-bg {
               background-image: url("BACKGROUND-3.jpg");
-              min-height: 40vh;
+              min-height: 50vh;
               background-attachment: fixed;
               background-position: center;
               background-repeat: no-repeat;
               background-size: cover;
+              text-align: center;
             }    
+
+            .fixed-bgtext{
+              color: white;
+              font-size: 6vh;
+              font-family: rowdies;
+              padding-top: 10vh;
+              margin: auto;
+            }
 
                  #fixed-bg2 {
                   background-image: url("BACKGROUND-4.jpg");
@@ -264,9 +301,9 @@ a{
 
              /*CLIENTS*/
    #clientsheading{
-    background-color: black;
+    background-color: white;
       text-align: center;
-      color: white;
+      color: black;
       font-family: rowdies;
       font-weight: 700;
       position: relative;
@@ -279,7 +316,7 @@ a{
   display: grid;
   justify-content: center;
   height: 30vh;
-  background-color: black;
+  background-color: white;
 }
 .client1 {
   object-fit: contain;
@@ -297,14 +334,14 @@ a{
 }
               /*PROJECTS*/
   #PROJECTS{
-    height: 65vh;
+    height: 80vh;
     width: 100%;
-    background-color: black;
+    background-color: white;
   }
   #projectsheading{
-    background-color: transparent;
-     text-align: center;
-      color: white;
+    background-color: white;
+      text-align: center;
+      color: black;
       font-family: rowdies;
       font-weight: 700;
       position: relative;
@@ -313,43 +350,32 @@ a{
     padding: 5vh;
     font-size: 5vh;
 }
-
-                   
-
-
 #projectlist{
- display: grid;
- grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 2vw;
   justify-content: center;
-  align-items: center;
-  margin-top: 3vh;
-    position: relative;
-    text-align: center;
-    color: black;
     font-size: large;
 }
 
 
 .hoverimg{
-  height: 33vh;
-  width: 28vw;
-}
-a {
-  background:black;
-  
+  height: 50vh;
+  width: 80vw;
+  border-radius: 5%;
+  box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
 }
 .hoverimg:hover {
   opacity: 0.5;
-  border: gray solid 3px;
-  background-color: #000000;
-  transform: scale(1.2);
+  transform: scale(1.05);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
   transition: transform .5s
 
 }
-.squidward{
-  object-fit: contain;
-  background-color: #000000;
-}
+
 
 .centeredtxt{
   font-family: rowdies;
@@ -358,33 +384,8 @@ a {
   color: white;
   cursor: pointer;
 }
-.tryhover:hover + #centered1{
-  display: block;
-}
-.tryhover:hover + #centered2{
-  display: block;
-}
-.tryhover:hover + #centered3{
-  display: block;
-}
-#centered1{
-    position:absolute;
-    top: 40%;
-    padding-left: 2vw;
-    display: none;
-}
-#centered2{
-  position:absolute;
-  top: 40%;
-  padding-left: 8vw;
-  display: none;
-}
-#centered3{
-  position:absolute;
-  top: 40%;
-  padding-left: 1vw;
-  display: none;
-}
+
+
 
        /*contact form*/
 
@@ -392,9 +393,9 @@ a {
 
 
        #contactsheading{
-        background-color: black;
+        background-color: white;
           text-align: center;
-          color: #ff5047;
+          color: black;
           font-family: rowdies;
           font-weight: 700;
           position: relative;
@@ -404,24 +405,34 @@ a {
         font-size: 5vh;
     }
 #contact-form{
-  height: 50vh;
+  height: 55vh;
   width: 100%;
+  margin-left: -4vw;
   text-align: center;
-  background-color: black;
+  background-color: white;
   color: #ff5047;
   font-family: rowdies;
   font-weight: 400;
-  font-size: x-large;
+  font-size: 3vh;
   text-align: center;
+  margin-top: 5vh;
+  padding: 3vw;
+}
+#contactcenter{
+  width: 100%;
+  height: 80vh;
+  background-color: whitesmoke;
+  display: grid;
+  justify-content: center;
 }
 #contactname{
   background-color: transparent;
   border: 0px solid;
-  color: white;
+  color: gray;
   width: 20vw;
   font-family: rowdies;
   font-weight: 400;
-  font-size: large;
+  font-size: 3vh;
   text-align: center;
   outline: none;
   margin-bottom: 5vh;
@@ -429,23 +440,23 @@ a {
 #contactemail{
   background-color: transparent;
   border: 0px solid;
-  color: white;
+  color: gray;
   width: 20vw;
   font-family: rowdies;
   font-weight: 400;
-  font-size: medium;
+  font-size: 3vh;
   text-align: center;
   outline: none;
   margin-bottom: 5vh;
 }
 #submitbutton{
-  padding: 15px;
+  padding: 1.5vw;
   font-family: rowdies;
   font-weight: 400;
-  font-size: medium;
+  font-size: 3vh;
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   border: gray solid 3px;
   border-radius: 20%;
 }
@@ -458,106 +469,59 @@ a {
 
 
               /*back*/
-              .box-area {
-                position: relative;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-              }
-              .box-area li {
-                position: relative;
-                display: block;
-                list-style: none;
-                width: 25px;
-                height: 25px;
-                background: #ff5047;
-                animation: animate 20s linear infinite;
-                bottom: -150px;
-              }
-              .box-area li:nth-child(1) {
-                left: 56%;
-                width: 80px;
-                height: 80px;
-                animation-delay: 0s;
-              }
-              .box-area li:nth-child(2) {
-                left: 12%;
-                width: 30px;
-                height: 30px;
-                animation-delay: 1.5s;
-                animation-duration: 10s;
-              }
-              .box-area li:nth-child(3) {
-                left: 70%;
-                width: 100px;
-                height: 100px;
-                animation-delay: 5.5s;
-              }
-              .box-area li:nth-child(4) {
-                left: 42%;
-                width: 150px;
-                height: 150px;
-                animation-delay: 0s;
-                animation-duration: 15s;
-              }
-              .box-area li:nth-child(5) {
-                left: 65%;
-                width: 40px;
-                height: 40px;
-                animation-delay: 0s;
-              }
-              .box-area li:nth-child(6) {
-                left: 15%;
-                width: 110px;
-                height: 110px;
-                animation-delay: 3.5s;
-              }
-              @keyframes animate {
-                0% {
-                  transform: translateY(0) rotate(0deg);
-                  opacity: 1;
-                }
-                100% {
-                  transform: translateY(-800px) rotate(360deg);
-                  opacity: 0;
-                }
-              }
+
+                                        /*about me*/
+            .cont{
+              display: grid;
+              grid-template-columns: auto auto;
+              justify-content: center;
+              align-items: center;
+              height: 80vh;
+              column-gap: 5vw;
+              
+            }
+            .aboutmetxt{
+              text-align: center;
+              height: 50vh;
+              width: 15vw;
+              padding-left: 1vw;
+              padding-right: 1vw;
+              background-color: whitesmoke;
+              border-radius: 5%;
+            }
+            .aboutmeimg{
+              background-color: whitesmoke;
+              height: 50vh;
+              width: 25vw;
+            }
+            #faiz{
+              height: 50vh;
+              width: 20vw;
+              border-radius: 5%;
+            }
+            #aboutmeh3{
+              font-size: 5vh;
+              font-family: rowdies;
+              padding-top: -15vh ;
+              padding-bottom: 5vh;
+              color: #ff5047;
+            }
+            #aboutmep{
+              font-size: 2.5vh;
+              font-family: ROWDIES;
+              color: gray;
+            }
 
                 /*fixed img*/
 
 
               
-                .title {
-                  font-size: 5.5vh;
-                 
-                  color: white;
-                  display: inline-block;
-                  text-align: center;
-                  padding-top: 15vh;
-                  line
-                }
-              
-                .title .ltr {
-                 
-                  animation: fade-in 500ms ease-in var(--delay);
-                }
                 
-                @keyframes fade-in {
-                  to {
-                background-color: black;
-              
-                  }
-                }
-                .title .ltr.show {
-                  font-weight: 900;
-                  color:#ff5047 ;
-                  
-                }
                 #fixed-bg2{
                   display: grid;
                   grid-template-columns: auto auto;
+                 
+                 
                 }
                 #bg2-txt{
                   font-size: x-large;
@@ -568,11 +532,13 @@ a {
                   position: relative;
                   animation: bg-txt 5s  infinite;
                   text-align: center;
+                  opacity: 1;
            
                                 }
                 #bg2-img{
                   animation: bg-anim 5s  infinite;
                   position: relative;
+                  opacity: 1;
                 
                 }
                 @keyframes bg-anim {
@@ -585,8 +551,8 @@ a {
                     color: transparent;
                     left: 0;
                   }
-                  70% {
-                      color: white;
+                  60% {
+                      color: black;
                       left: 45vw;
                     
                   }
@@ -696,6 +662,9 @@ and (max-device-width: 667px) {
     height: 15vh;
     width: 20vw;
   }
+  .float{
+    left: 5vw;
+  }
 
   #nav{
     right: 0px;
@@ -704,7 +673,7 @@ and (max-device-width: 667px) {
     position: relative;
     height: 92vh;
     top: 8vh;
-    background-color: #000000;
+    background-color: whitesmoke;
     transition: transform 0.5s ease-in;
   }
 
@@ -733,6 +702,50 @@ and (max-device-width: 667px) {
     transform: translateX(100%);
   }
 
+
+  /*ABOUT ME*/
+
+  #faiz{
+    height: 30vh;
+    width: 60vw;
+
+  }
+  .cont{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .aboutmeimg{
+    margin-top: 10vh;
+    height: 28vh;
+    width: 60vw;
+grid-row: 1;
+background-color: whitesmoke;
+margin-left: 15vw;
+  }
+  .aboutmetxt{
+    grid-row: 2;
+    width: 70vw;
+    padding-left: 10vw;
+    padding-right: 10vw ;
+    height: 60vh;
+    margin-top: 5vh;
+    margin-left: 2vw;
+  }
+
+
+               /*skills*/
+
+               #SKILLS{
+              margin-top: 30vh; 
+              }
+              .skillcenter{
+                width: 80vw;
+                margin-left: 10vw;
+              }
+              .progress {
+                width: 50vw;
+              }
+
 /* projects and clients*/
 
 
@@ -744,14 +757,16 @@ and (max-device-width: 667px) {
 #projectlist{
   display: grid;
   grid-template-columns: auto;
+  margin-bottom: 10vh;
 }
 .hoverimg{
-  height: 15vh;
-  width: 60vw;
+  height: 30vh;
+  width: 90vw;
   margin-bottom: 5vh;
 }
 #PROJECTS{
-  height: 80vh;
+  height: 120vh;
+  padding-bottom: 20vh;
 }
 
 #centered1{
@@ -769,6 +784,19 @@ and (max-device-width: 667px) {
   top: 65%;
   padding-right: 20vw
 }
+
+                 /*conatct me*/
+                 
+                 #contact-form{
+
+                  height: 45vh;
+
+                 }
+                 #contactcenter{
+
+                  height: 60vh;
+                 }
+
 
 /*fixed images*/
 
@@ -802,11 +830,19 @@ and (max-device-width: 667px) {
 
 #fixed-bg {
   background-image: url("BACKGROUND-3.jpg");
-  min-height: 60vh;
+  min-height: 20vh;
 }
 .title{
   padding-top: 5vh;
 }
+.fixed-bgtext{
+  padding-top: 3vh;
+  font-size: 5vh;
+  padding-bottom: 5vh;
+
+}
+
+
 
 /*footer*/
 
@@ -835,6 +871,23 @@ and (max-device-width: 667px) {
                       font-size: x-large;
                       font-weight: 700;
                       font-family: rowdies;
+                    }
+                    .float{
+                      left: 15vw;
+                    }
+
+
+                    #faiz{
+                      width: 35vw;
+                    }
+
+                    .aboutmeimg{
+                      width: 35vw;
+                    }
+
+                    .aboutmetxt{
+                      width: 33vw;
+                      height: 55vh;
                     }
 
                     #site-logo{
@@ -885,34 +938,29 @@ and (max-device-width: 667px) {
                     }
 
                     .hoverimg{
-                      height: 18vh;
+                      height: 23vh;
                       width: 30vw;
                     }
 
                     #PROJECTS{
                       height: 45vh;
                       width: 100%;
-                      background-color: black;
+                      background-color: white;
                     }
 
-                    #centered1{
-                      position:absolute;
-                      top: 0%;
-                      padding-right: 80vw;
-                     
-                  }
-                  #centered2{
-                    position:absolute;
-                    top: 40%;
-                    padding-left: 2vw;
-                  
-                  }
-                  #centered3{
-                    position:absolute;
-                    top: 0%;
-                    padding-left: 1vw;
-                   
-                  }
+                    #contact-form{
+
+                      height: 45vh;
+    
+                     }
+
+                    
+                     #contactcenter{
+    
+                      height: 60vh;
+                     }
+    
+                
 
                    }
 
@@ -922,6 +970,8 @@ and (max-device-width: 667px) {
                    and (min-device-width: 900px)
                    and (max-device-width: 1024px) 
                     {
+
+                     
                       #hometext{
                         padding-left: 8vw;
                       
@@ -938,38 +988,43 @@ and (max-device-width: 667px) {
                         font-size: 3.2vh;
                       }
 
-                      #centered1{
-                        position:absolute;
-                        top: 40%;
-                        padding-right: 70vw;
-                        display: none;
+                      .float{
+                        top: -20vh;
+                        left: 15vw;
                       }
 
-                      #centered2{
-                        position:absolute;
-                        top: 40%;
-                        padding-left: 4vw;
-                        display: none;
-                      }
 
-                      #centered3{
-                        position:absolute;
-                        top: 40%;
-                        padding-right: 8vw;
-                        display: none;
-                      }
 
-                      .hoverimg{
-                        height: 22vh;
+
+                      #faiz{
                         width: 30vw;
                       }
-
-                      #PROJECTS{
+  
+                      .aboutmeimg{
+                        width: 30vw;
+                      }
+  
+                      .aboutmetxt{
+                        width: 30vw;
                         height: 50vh;
                       }
 
 
 
+
+
+
+                
+
+                      .hoverimg{
+                        height: 25vh;
+                        width: 27vw;
+                      }
+
+                      #PROJECTS{
+                        height: 65vh;
+                        margin-bottom: -10vh;
+                      }
 
                       #bg2-img{
                         height: 70vh;
@@ -1016,7 +1071,7 @@ and (max-device-width: 667px) {
                   and (min-device-width: 1440px)
                    {
 
-
+                   
 
                     #hometext{
                       margin-top: 20vh;
@@ -1036,15 +1091,48 @@ and (max-device-width: 667px) {
                       font-size: 3.2vh;
                     }
 
+                    #contact-form{
+
+                      height: 45vh;
+    
+                     }
+                     #contactcenter{
+    
+                      height: 65vh;
+                     }
+
+
+                    
+
+                    #faiz{
+                      width: 25vw;
+                    }
+
+                    .aboutmeimg{
+                      width: 25vw;
+                    }
+
+                    .aboutmetxt{
+                      width: 25vw;
+                      height: 50vh;
+                    }
+
 
                     .hoverimg{
-                      height: 25vh;
-                      width: 30vw;
+                      height: 30vh;
+                      width: 28vw;
                     }
 
                     #PROJECTS{
-                      height: 60vh;
+                      height: 65vh;
                     }
+
+                    @keyframes bg-anim {
+                      from {right: 0;}
+                      70%{right: 52vw;}
+                      to {right: 52vw;}
+                    }
+                }
 
                    }
 
@@ -1070,7 +1158,7 @@ and (max-device-width: 667px) {
                       .desktop-nav{
                         font-size: 4vh;
                       }
-
+                     
                      
                       #act-img2{
                         height: 40vh;

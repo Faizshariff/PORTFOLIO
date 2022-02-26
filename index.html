@@ -11,36 +11,61 @@
 <body>
   
     <header>
+ 
      
-      <div id="hometext">
-          <h1 id="hometexth1">I AM FAIZ SHARIFF</h1>
-         <h3 id="hometexth3">A CREATIVE AND PASSIONATE WEB DEV</h3>
+      <div class="slideheight">
+        <img class="slide" src="assets/images/slide1.jpg">
+        <img class="slide" src="assets/images/slide2.jpg">
+        <img class="slide" src="assets/images/slide3.jpg">
+        <img class="slide" src="assets/images/slide4.jpg">
+        <img class="slide" src="assets/images/slide5.jpg">
+        <img class="slide" src="assets/images/slide6.jpg">
+        <img class="slide" src="assets/images/slide7.jpg">
+        <img class="slide" src="assets/images/slide8.jpg">
+    </div>
+      <div class="float" id="hometext">
+          <h1 class="floatext title">I AM FAIZ SHARIFF
+         A CREATIVE AND PASSIONATE WEB DEV</h1>
         </div>
-           <div id="headerimage"><img id="img1" src="assets/images/FAIZ.png"></div>
-        </div>
-        <div >
         <nav id="myHeader">
-        <div>  <a href="#"><img id="site-logo" src="assets/images/DEV LOGO.png"></a></div>
-        <ul id="nav" class="navlinks">
-          <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#maine">SKILLS</a></li>
-          <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#CLIENTS">PROJECTS</a></li>
-          <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#fixedimg1">CLIENTS</a></li>
-          <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#WORK-INQUIRY">CONTACT ME</a></li>
-        </ul>
-        <div id="burger">
-        <a   onclick="myFunction2()">
-          <img id="burgerimg" src="assets/images/burger.png">
-        </a>
-      </div>
-    </nav>
+      
+          <ul id="nav" class="navlinks">
+            <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#maine">SKILLS</a></li>
+            <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#CLIENTS">PROJECTS</a></li>
+            <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#fixedimg1">CLIENTS</a></li>
+            <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#WORK-INQUIRY">CONTACT ME</a></li>
+          </ul>
+          <div id="burger">
+          <a   onclick="myFunction2()">
+            <img id="burgerimg" src="assets/images/burger.png">
+          </a>
+        </div>
+      </nav>
+      
     </div>
   
     </header>
-    <div id="maine"></div>
-    <main >
+    <main>
+      <section id="aboutme">
+        <div class="cont">
+         
+          <div class="aboutmetxt"><h3 id="aboutmeh3">ABOUT ME</h3><p id="aboutmep">
+            HI,IM FAIZ IM A FRONT-END WEB DEV.I LOVE BUILDING SITES 
+            MY JOB IS TO MAKE YOUR WEBSITE CRISP,CLEAN AND IMPROVE OVERALL
+            DESIGN AND FEEL OF THE SITE. IF IM NOT PUSHING PIXELS
+            IN MY SPARE TIME YOU ARE MOST LIKELY FIND ME HITTING THE GYM
+            OR PLAYING CS GO 
+          </p></div>
+          <div class="aboutmeimg"><img id="faiz" src="assets/images/FAIZ2.jpg" ></div>
+        </div>
+         
+      </section>
+         <div id="maine"></div>
 
-      <hr>
+
         <Section id="SKILLS">
+
+          <div class="skillcenter">
 
             <div id="skillsheading">
                 <p id="skillstext">SKILLS</p>
@@ -50,24 +75,26 @@
             <div class="progress_heading">HTML</div>
             <div class="progress">
                 <div class="progress__fill1"></div>
-                <span class="progress__text">95%</span>
+                <span class="progress__text"></span>
               </div>
               <div class="progress_heading">CSS</div>
               <div class="progress">
                 <div class="progress__fill2"></div>
-                <span class="progress__text">80%</span>
+                <span class="progress__text"></span>
               </div>
               <div class="progress_heading">JAVA SCRIPT</div>
               <div class="progress">
                 <div class="progress__fill3"></div>
-                <span class="progress__text">70%</span>
+                <span class="progress__text"></span>
               </div>
               <div class="progress_heading">WORDPRESS</div>
               <div class="progress">
                 <div class="progress__fill4"></div>
-                <span class="progress__text">90%</span>
+                <span class="progress__text"></span>
               </div>
             </div>
+
+          </div>
 
             </Section>
 
@@ -79,7 +106,7 @@
             
 
 
-              <div id="fixed-bg"><div ><p class="title">“Any fool can write code that a computer can understand programmers write code that humans can understand.” </p>  
+              <div id="fixed-bg"><div ><p class="fixed-bgtext">“Any fool can write code that a computer can understand programmers write code that humans can understand.” </p>  
               </div>
             </div>
               
@@ -94,7 +121,7 @@
 
 
 
-                          <div class="box-area">
+                   
                            
                           
                 <section id="CLIENTS">
@@ -103,7 +130,7 @@
                     <p id="clientstext">PAST CLIENTS</p>
                   </div>
                             <div class="client">
-                              <h3>past clients</h3>
+                             
                                 <a href="#"><img src="assets/images/logo.png" class="client1" ></a>
                               </div>
                                     
@@ -129,27 +156,15 @@
         
         
                 <div id="projectlist">
-                <div><a class="tryhover" href="https://faizshariff.github.io/STEVE-JOBS-TRIBUTE-SITE/"><img  class="hoverimg" src="assets/images/stevejobs.jpg"/></a><div id="centered1"><h3 class="centeredtxt">STEVEJOBS TRIBUTE SITE</h3></div></div>
+                <div><a class="tryhover" href="https://faizshariff.github.io/STEVE-JOBS-TRIBUTE-SITE/"><img  class="hoverimg" src="assets/images/stevejobs.jpg"/></a></div>
         
-                <div><a class="tryhover" href="https://faizshariff.github.io/CALCULATOR/"><img class="hoverimg" src="assets/images/calculator.jpg"/></a><div id="centered2"><h3 class="centeredtxt">CALCULATOR</h3></div></div>
+                <div><a class="tryhover" href="https://faizshariff.github.io/CALCULATOR/"><img class="hoverimg" src="assets/images/calculator.jpg"/></a></div>
         
-                <div><a class="tryhover" href="https://faizshariff.github.io/FLOATING-SQUIDWARD-GAME.github.io/"><img class="hoverimg squidward" src="assets/images/squidward.png"/></a><div id="centered3"><h3 class="centeredtxt">FLOATING SQUIDARD GAME</h3></div></div>
+                <div><a class="tryhover" href="https://faizshariff.github.io/FLOATING-SQUIDWARD-GAME.github.io/"><img class="hoverimg squidward" src="assets/images/squidward.jpg"/></a></div>
           
              
                 </div>
-        
-                <ul >
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </section>
-              </div>
-
-      
+                </section>
 
       
       <section id="fixedimg2">
@@ -165,7 +180,7 @@
           <div id="contactsheading">
             <p id="contactstext">CONTACT ME</p>
           </div>
-
+<div id="contactcenter">
           <div id="contact-form">
        
             <form action="https://formsubmit.co/faizshariff540@email.com" method="POST">
@@ -178,6 +193,7 @@
          </form>
         
           </div>
+        </div>
         </section>
 
 
@@ -227,7 +243,7 @@ var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset > sticky) {
+  if (window.pageXOffset > sticky) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
@@ -254,6 +270,26 @@ function myFunction() {
 
             }
             
+                                             /*HOME*/
+
+                                             var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);
+}
+
+
+
+
 
 
     </script>
