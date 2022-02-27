@@ -735,6 +735,7 @@ and (max-device-width: 667px) {
   .cont{
     display: grid;
     grid-template-columns: auto;
+      margin-top: 10vh;
   }
   .aboutmeimg{
     margin-top: 10vh;
@@ -758,7 +759,7 @@ margin-left: 15vw;
                /*skills*/
 
                #SKILLS{
-              margin-top: 30vh; 
+              margin-top: 40vh; 
               }
               .skillcenter{
                 width: 80vw;
