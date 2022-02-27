@@ -497,7 +497,19 @@ a{
             #faiz{
               height: 50vh;
               width: 20vw;
-              border-radius: 5%;
+              position: relative;
+              z-index: 2;
+              box-shadow:0px 0px 30px -4px rgb(0 0 0 / 30%);
+        
+            }
+            .rightbox{
+              height: 53vh;
+              width: 25vw;
+              position: absolute;
+              left: 56%;
+              top: 105vh;
+              background-color: black;
+            
             }
             #aboutmeh3{
               font-size: 5vh;
@@ -705,10 +717,20 @@ and (max-device-width: 667px) {
 
   /*ABOUT ME*/
 
-  #faiz{
+    #faiz{
     height: 30vh;
     width: 60vw;
+    left: 22%;
 
+  }
+  .rightbox{
+    height: 30vh;
+    width: 60vw;
+    position: absolute;
+    left: 25%;
+    top: 105vh;
+    background-color: black;
+  
   }
   .cont{
     display: grid;
@@ -876,9 +898,18 @@ margin-left: 15vw;
                       left: 15vw;
                     }
 
-
-                    #faiz{
+                       #faiz{
                       width: 35vw;
+                    }
+
+                    .rightbox{
+                      height: 53vh;
+                      width: 35vw;
+                      position: absolute;
+                      left: 56%;
+                      top: 105vh;
+                      background-color: black;
+                    
                     }
 
                     .aboutmeimg{
@@ -994,11 +1025,21 @@ margin-left: 15vw;
                       }
 
 
-
-
-                      #faiz{
+ #faiz{
                         width: 30vw;
                       }
+
+                      
+                    .rightbox{
+                      height: 54vh;
+                      width: 30vw;
+                      position: absolute;
+                      left: 56%;
+                      top: 105vh;
+                      background-color: black;
+                    
+                    }
+
   
                       .aboutmeimg{
                         width: 30vw;
