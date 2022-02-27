@@ -738,7 +738,7 @@ and (max-device-width: 667px) {
       margin-top: 10vh;
   }
   .aboutmeimg{
-    margin-top: 10vh;
+    margin-top: 20vh;
     height: 28vh;
     width: 60vw;
 grid-row: 1;
@@ -751,8 +751,8 @@ margin-left: 15vw;
     padding-left: 10vw;
     padding-right: 10vw ;
     height: 60vh;
-    margin-top: 5vh;
-    margin-left: 2vw;
+    margin-top: 20vh;
+    margin-left: 9vw;
   }
 
 
