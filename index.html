@@ -212,83 +212,8 @@
         </section>
     </footer>
   </div>
-  <script></script>
     <script>
-                        /*FIXED BACKGROUND TEXT ANIMATION*/
- const title = document.querySelector(".title");
-
-title.innerHTML = title.innerText
-  .split("")
-  .map((ltr, idx) => {
-    return `<span class="ltr" style="--delay: ${idx * 100}ms">${ltr}</span>`;
-  })
-  .join("");
-
-console.log(title);
-
-const ltrs = document.querySelectorAll(".title .ltr");
-
-ltrs.forEach((ltr) => {
-  ltr.addEventListener("animationend", () => {
-    ltr.classList.add("show");
-  });
-});
-              /*STICKY HEADER*/
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageXOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-               /*MOBILE MENU*/
-
-             function myFunction2() {
-               if( document.getElementById('nav').classList.contains("navlinks")){
-                     document.getElementById('nav').classList.toggle("newClass");}         
-}
-            function myFunction3(){
-              if (document.getElementById('nav').classList.contains("newClass")) {
-                document.getElementById('nav').classList.toggle("newClass2");
-
-                if ( document.getElementById('nav').classList.contains("newClass2")) {
-                  document.getElementById('nav').classList.remove("newClass2");
-              document.getElementById('nav').classList.add("navlinks");
-              myFunction2().click
-             
-            }
-              }
-
-            }
-            
-                                             /*HOME*/
-
-                                             var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("slide");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000);
-}
-
-
-
-
-
-
+                     const title=document.querySelector(".title");title.innerHTML=title.innerText.split("").map((e,t)=>`<span class="ltr" style="--delay: ${100*t}ms">${e}</span>`).join(""),console.log(title);const ltrs=document.querySelectorAll(".title .ltr");ltrs.forEach(e=>{e.addEventListener("animationend",()=>{e.classList.add("show")})}),window.onscroll=function(){myFunction()};var header=document.getElementById("myHeader"),sticky=header.offsetTop;function myFunction(){window.pageXOffset>sticky?header.classList.add("sticky"):header.classList.remove("sticky")}function myFunction2(){document.getElementById("nav").classList.contains("navlinks")&&document.getElementById("nav").classList.toggle("newClass")}function myFunction3(){document.getElementById("nav").classList.contains("newClass")&&(document.getElementById("nav").classList.toggle("newClass2"),document.getElementById("nav").classList.contains("newClass2")&&(document.getElementById("nav").classList.remove("newClass2"),document.getElementById("nav").classList.add("navlinks"),myFunction2().click))}var myIndex=0;function carousel(){var e,t=document.getElementsByClassName("slide");for(e=0;e<t.length;e++)t[e].style.display="none";++myIndex>t.length&&(myIndex=1),t[myIndex-1].style.display="block",setTimeout(carousel,2e3)}carousel();
     </script>
 </body>
 </html>
