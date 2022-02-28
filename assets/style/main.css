@@ -49,15 +49,13 @@ font-family: rowdies;
 }
 
 @keyframes fade-in {
+    from{
+        color: #ff5047;
+    }
   to {
-background-color: black;
 color: white;
 
   }
-}
-.title .ltr.show {
-  color:#ff5047 ;
-  
 }
 
 
