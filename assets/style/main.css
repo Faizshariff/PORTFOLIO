@@ -43,20 +43,6 @@ font-family: rowdies;
   padding-right: 20vw;
 }
 
-.title .ltr {
- 
-  animation: fade-in 500ms ease-in var(--delay);
-}
-
-@keyframes fade-in {
-    from{
-        color: #ff5047;
-    }
-  to {
-color: white;
-
-  }
-}
 
 
 
