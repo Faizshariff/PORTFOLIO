@@ -37,10 +37,24 @@ font-family: rowdies;
 
 .title {
   font-size: 6vh;
-  color: white;
+  color: black;
   display: inline-block;
   text-align: center;
   padding-right: 20vw;
+}
+.title .ltr {
+ 
+  animation: fade-in 500ms ease-in var(--delay);
+}
+
+@keyframes fade-in {
+    from{
+        color: #ff5047;
+    }
+  to {
+color: white;
+
+  }
 }
 
 
