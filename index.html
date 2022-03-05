@@ -5,41 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/EMER.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  
+  <div class="loaderclass"><img src="assets/images/loader.gif"></div>
     <header>
-            <div class="loaderclass"><img src="assets/images/loader.gif"></div>
- 
+
+
+
      
-      <div class="slideheight">
-        <img class="slide" src="assets/images/slidey2.jpg">
-          <img class="slide" src="assets/images/slidey4.jpg">
-        <img class="slide" src="assets/images/slidey6.jpg">
-        <img class="slide" src="assets/images/slidey7.jpg">
-    </div>
-      <div class="float twelve" id="hometext">
-          <h1 class="floatext">I AM FAIZ SHARIFF
-         A CREATIVE AND PASSIONATE WEB DEV</h1>
+     
+    
+      <div id="img">
+
+        <div class="container">
+          
+          <p>I AM FAIZ SHARIFF<br>A <br><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
         </div>
-        <nav id="myHeader">
+      </div>
+    <nav id="myHeader">
       
-          <ul id="nav" class="navlinks">
-            <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#maine">SKILLS</a></li>
-            <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#CLIENTS">PROJECTS</a></li>
-            <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#fixedimg1">CLIENTS</a></li>
-            <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#WORK-INQUIRY">CONTACT ME</a></li>
-          </ul>
-          <div id="burger">
-          <a   onclick="myFunction2()">
-            <img id="burgerimg" src="assets/images/burger.png">
-          </a>
-        </div>
-      </nav>
-      
+      <ul id="nav" class="navlinks">
+        <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#maine">SKILLS</a></li>
+        <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#CLIENTS">PROJECTS</a></li>
+        <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#fixedimg1">CLIENTS</a></li>
+        <li class="desktop-nav"><a class="white" onclick="myFunction3()"href="#WORK-INQUIRY">CONTACT ME</a></li>
+      </ul>
+      <div id="burger">
+      <a   onclick="myFunction2()">
+        <img id="burgerimg" src="assets/images/burger.png">
+      </a>
     </div>
+  </nav>
   
     </header>
     <main>
@@ -99,26 +97,12 @@
 
 
 
-            <section id="fixedimg1">
-              
-            
-
-
-              <div id="fixed-bg"><div ><p class="fixed-bgtext title">“Any fool can write code that a computer can understand programmers write code that humans can understand.” </p>  
-              </div>
-            </div>
-              
-              
-            </section>
-
-
           
 
 
 
 
-
-
+            <hr style="color: white; size: 3px;">
                    
                            
                           
@@ -141,8 +125,7 @@
  
                
 
-
-
+                <hr style="color: white; size: 3px;">
 
                 <section id="PROJECTS">
 
@@ -152,25 +135,38 @@
         
                  
         
+      <div id="projectlist">
         
-                <div id="projectlist">
-                <div><a class="tryhover" href="https://faizshariff.github.io/STEVE-JOBS-TRIBUTE-SITE/"><img  class="hoverimg" src="assets/images/stevejobs.jpg"/></a></div>
-        
-                <div><a class="tryhover" href="https://faizshariff.github.io/CALCULATOR/"><img class="hoverimg" src="assets/images/calculator.jpg"/></a></div>
-        
-                <div><a class="tryhover" href="https://faizshariff.github.io/FLOATING-SQUIDWARD-GAME.github.io/"><img class="hoverimg squidward" src="assets/images/squidward.jpg"/></a></div>
-          
-             
+                  <figure class="snip1083 red"><img src="assets/images/stevejobs.jpg" alt="sample33" />
+                    <figcaption>
+                      <h2>STEVE  <span> JOBS</span></h2>
+                    </figcaption>
+                    <a href="https://faizshariff.github.io/STEVE-JOBS-TRIBUTE-SITE/"></a>
+                  </figure>
+
+
+                  <figure class="snip1083 red"><img src="assets/images/calculator.jpg" alt="sample33" />
+                    <figcaption>
+                      <h2>REPONSIVE  <span> CALCULATOR</span></h2>
+                    </figcaption>
+                    <a href="https://faizshariff.github.io/CALCULATOR/"></a>
+                  </figure>
+
+
+                  <figure class="snip1083 red"><img src="assets/images/squidward.jpg" alt="sample33" />
+                    <figcaption>
+                      <h2>FLOATING SQUIDWARD<span> GAME</span></h2>
+                    </figcaption>
+                    <a href="https://faizshariff.github.io/FLOATING-SQUIDWARD-GAME.github.io/"></a>
+                  </figure>
+
+
                 </div>
+
+
                 </section>
 
-      
-      <section id="fixedimg2">
-        
-        <div></div>
-        <div id="fixed-bg2"><div id="bg2-txt"><h1>ARE YOU IMPRESSED BY MY WORK?</h1><h2>FEEL FREE TO CONTACT ME</h2></div><div id="bg2-img"><img id="act-img2" src="assets/images/handshake.png"></div></div>
-        
-      </section>
+
 
         <section id="WORK-INQUIRY">
 
@@ -214,7 +210,107 @@
     </footer>
   </div>
     <script>
-const title=document.querySelector(".title");title.innerHTML=title.innerText.split("").map((e,t)=>`<span class="ltr" style="--delay: ${100*t}ms">${e}</span>`).join(""),console.log(title);const ltrs=document.querySelectorAll(".title .ltr");ltrs.forEach(e=>{e.addEventListener("animationend",()=>{e.classList.add("show")})}),window.onscroll=function(){myFunction()};var header=document.getElementById("myHeader"),sticky=header.offsetTop;function myFunction(){window.pageXOffset>sticky?header.classList.add("sticky"):header.classList.remove("sticky")}function myFunction2(){document.getElementById("nav").classList.contains("navlinks")&&document.getElementById("nav").classList.toggle("newClass")}function myFunction3(){document.getElementById("nav").classList.contains("newClass")&&(document.getElementById("nav").classList.toggle("newClass2"),document.getElementById("nav").classList.contains("newClass2")&&(document.getElementById("nav").classList.remove("newClass2"),document.getElementById("nav").classList.add("navlinks"),myFunction2().click))}var myIndex=0;function carousel(){var e,t=document.getElementsByClassName("slide");for(e=0;e<t.length;e++)t[e].style.display="none";++myIndex>t.length&&(myIndex=1),t[myIndex-1].style.display="block",setTimeout(carousel,2e3)}carousel();var loader=document.querySelector(".loaderclass");function vanish(){loader.classList.add("loadervanish")}window.addEventListener("load",vanish);   
-</script>
+                        /*FIXED BACKGROUND TEXT ANIMATION*/
+                        const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["CREATIVE", "AND PASSIONATE", "WEB-DEV"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+              /*STICKY HEADER*/
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageXOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+              /*STICKY HEADER*/
+
+              window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+               /*MOBILE MENU*/
+
+             function myFunction2() {
+               if( document.getElementById('nav').classList.contains("navlinks")){
+                     document.getElementById('nav').classList.toggle("newClass");}         
+}
+            function myFunction3(){
+              if (document.getElementById('nav').classList.contains("newClass")) {
+                document.getElementById('nav').classList.toggle("newClass2");
+
+                if ( document.getElementById('nav').classList.contains("newClass2")) {
+                  document.getElementById('nav').classList.remove("newClass2");
+              document.getElementById('nav').classList.add("navlinks");
+              myFunction2().click
+             
+            }
+              }
+
+            }
+            
+                                             /*HOME*/
+
+                                             var loader = document.querySelector(".loaderclass")
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+  loader.classList.add("disappear");
+}
+
+
+
+    </script>
 </body>
 </html>
